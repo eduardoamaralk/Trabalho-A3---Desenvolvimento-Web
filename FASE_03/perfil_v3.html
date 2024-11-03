@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_v2.css">
+    <link rel="shortcut icon" href="Microsoft-Fluentui-Emoji-3d-Alien-3d.512.png" type="image/x-icon">
+    <title>Eduardo Amaral</title>
+</head>
+<body>
+    <h1><strong>Sobre Mim</strong></h1>
+    <table>
+        <tr>
+            <td><h2>Nome Completo</h2><p>Eduardo Amaral Borges Braga</p></td>
+            <td><h2>RA</h2><p>323212499</p></td>
+        </tr>
+    
+        <tr>
+            <td>
+                <h2>E-mail</h2> 
+                <input type="text" id="email" placeholder="Digite seu e-mail" onblur="validateEmail()">
+                <p id="emailError" style="color: red; display: none;"></p>
+            </td>
+        </tr>
+    
+        <tr>
+            <td><h2>Curso e Período Atual</h2><p>Sistemas De Informação, 4º semestre</p></td>
+            <td><h2>Endereço Completo</h2><p>Rua Nelson Lemos de Carvalho 109</p></td>
+        </tr>
+    </table>
+
+    <table id="ucTable">
+        <tr>
+            <td colspan="2">
+                <h2>Lista de UCs</h2>
+                <li>Vida e Carreira</li>
+                <li>Modelagem de Software</li>
+                <li>Programação de Soluções</li>
+                <li>Gestão e Qualidade de Software</li>
+                <li>Sistemas Computacionais e Segurança</li>
+                <li>Ambientes Computacionais e Conectividade</li>
+                <li>Modelos, Métodos e Técnicas de Engenharia de Software</li>
+                <button onclick="addUC()">Adicionar UC</button>
+                <table id="ucList">
+                    <thead>
+                        <tr>
+                            <th>UC</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <td colspan="2">
+            <h2>Descrição Perfil Profissional</h2>
+            <p>Olá a todos! Me chamo Eduardo, tenho 20 anos e sou estudante de Sistemas de Informação pelo Centro Universitário UNA. Atualmente sou estagiário no departamento de TI de uma empresa no setor de infraestrutura em que minhas principais atividades incluem suporte ao usuário interno e documentação de chamados. Atuo paralelamente no setor de sistemas desenvolvendo aplicativos utilizando a ferramenta PowerApps.</p>
+
+            <h2>Descrição Perfil Pessoal</h2>
+            <p id="personalDescription">Gosto muito de jogar videogame, acompanhar partidas de futebol e aproveitar o tempo com a minha namorada, amigos e família.</p>
+            <input type="text" id="newPersonalInfo" placeholder="Adicione nova informação ao perfil">
+            <button onclick="addPersonalInfo()">Adicionar Informação</button>
+        </td>
+        </tr>
+    </table>
+
+    <h4><a href="https://www.linkedin.com/in/eduardo-amaralk/">Meu LinkedIn</a></h4>
+
+    <script src="javascriptv2.js"></script>
+
+</body>
+</html>
